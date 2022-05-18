@@ -1,5 +1,4 @@
 from instaloader import *
-# TESTE
 
 L = Instaloader()
 
