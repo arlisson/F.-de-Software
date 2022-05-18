@@ -1,5 +1,5 @@
 from instaloader import *
-# Comentário de teste
+# TESTE
 
 L = Instaloader()
 
