@@ -2,9 +2,10 @@ from instaloader import *
 
 L = Instaloader()
 
-L.login('Username', 'Password')  # -> Email/usuario e senha para fazer login
+# -> Email/usuario e senha para fazer login
+L.login('Username', 'Password')
 
-PROFILE = ''  # -> Coloque o nome do perfil a ser procurado
+PROFILE = 'Perfil'  # -> Coloque o nome do perfil a ser procurado
 
 profile = Profile.from_username(L.context, PROFILE)
 
