@@ -1,6 +1,5 @@
 from instaloader import *
 
-print('hello world')
 
 L = Instaloader()
 
