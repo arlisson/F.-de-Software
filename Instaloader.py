@@ -1,5 +1,7 @@
 from instaloader import *
 
+print('hello world')
+
 L = Instaloader()
 
 # -> Email/usuario e senha para fazer login
