@@ -18,7 +18,7 @@ medo = int(medo_mercado.text)
 data = date.today()
 
 email_adress = 'robomensageiro4321@gmail.com'
-domain_adress = 'gmail'
+destinatario = 'arlisson234529@gmail.com'
 senha = 'ciounqbgujbtumly'
 mensagem = 'O mercado de cripto está em {}, o termômetro está no número: {}\n\nAtenciosamente Fábrica de Software so Instituto Federal Fluminense\nData:{}/{}/{}'.format(
     medo_texto.text, medo, data.day, data.month, data.year)
@@ -28,13 +28,13 @@ if(medo <= 20):
     msg = EmailMessage()
     msg['Subject'] = 'Atualização Sobre o Mercado de Cripto'
     msg['From'] = email_adress
-    msg['To'] = 'arlisson234529@gmail.com'
+    msg['To'] = destinatario
     msg.set_content(mensagem)
 else:
     msg = EmailMessage()
     msg['Subject'] = 'Atualização Sobre o Mercado de Cripto'
     msg['From'] = email_adress
-    msg['To'] = 'arlisson234529@gmail.com'
+    msg['To'] = destinatario
     msg.set_content(mensagem)
 
 with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
